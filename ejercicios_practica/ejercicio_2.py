@@ -46,4 +46,19 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle("Ejercicio 2-Multine plot")
+    ax = fig.add_subplot()
+
+    ax.plot(x, y1, color="c", marker=".", label="y1**2")
+    ax.plot(x, y2, color="b", marker="+", label="y2**3")
+    ax.set_facecolor("w")
+    ax.set_ylabel("Y")
+    ax.set_xlabel("X")
+    ax.legend()
+    plt.show       
+ 
+
     print("terminamos")
+
+    

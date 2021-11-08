@@ -34,5 +34,14 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.plot(x, y, color="m", marker="+", label="prueba")
+    ax.set_facecolor("w")
+    ax.set_title("Ejercicio_1")
+    ax.set_ylabel("yeje")
+    ax.set_xlabel("xeje")
+    ax.legend()
+    plt.show()
 
     print("terminamos")
